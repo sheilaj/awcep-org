@@ -93,6 +93,15 @@ li a.active {
   background: #eee;
 }
 
+#nice-menu-1 li:hover li a,
+#nice-menu-1 li:hover li a:link,
+#nice-menu-1 li:hover li a:visited,
+#nice-menu-1 li a,
+#nice-menu-1 li a:link,
+#nice-menu-1 li a:visited {
+  color: #eee;
+}
+
 #nice-menu-1 li.active-trail a,
 #nice-menu-1 li.active-trail a:link,
 #nice-menu-1 li.active-trail a:visited,
@@ -101,21 +110,15 @@ li a.active {
 #nice-menu-1 li:hover a:visited,
 #nice-menu-1 li a:hover,
 #nice-menu-1 li a:focus,
+#nice-menu-1 li ul li.active-trail a,
+#nice-menu-1 li ul li.active-trail a:link,
+#nice-menu-1 li ul li.active-trail a:visited,
 #nice-menu-1 li ul li:hover a,
 #nice-menu-1 li ul li:hover a:link,
 #nice-menu-1 li ul li:hover a:visited,
 #nice-menu-1 li ul li a:hover,
 #nice-menu-1 li ul li a:focus {
   color: #223;
-}
-
-#nice-menu-1 li:hover li a,
-#nice-menu-1 li:hover li a:link,
-#nice-menu-1 li:hover li a:visited,
-#nice-menu-1 li a,
-#nice-menu-1 li a:link,
-#nice-menu-1 li a:visited {
-  color: #eee;
 }
 
 /*
