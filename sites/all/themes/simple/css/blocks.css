@@ -1,0 +1,80 @@
+/**
+ * @file
+ * Block Styling
+ */
+
+
+.block { /* Block wrapper */
+  margin-bottom: 5px;
+}
+
+#block-block-1 ul { /* First block created with "Add block" link: Take Action */
+  margin: 0;
+  padding: 0;
+}
+
+#block-block-1 li { /* Take Action items */
+  list-style: none;
+  padding: 5px;
+  margin: 10px 0;
+  background-color: #eee;
+  color: #000;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+}
+
+#block-block-1 a:link,
+#block-block-1 a:visited {
+  color: #2b2b57;
+}
+
+#block-block-1 a:hover,
+#block-block-1 a:focus {
+  color: #667;
+}
+
+#block-block-2 {
+  min-height: 40px;
+}
+
+#block-block-2 p {
+  padding: 0;
+  margin: 0;
+}
+
+.facebook-link {
+  text-indent: -9999px;
+  background: url("../images/f_logo.png") no-repeat;
+  display: block;
+  width: 32px;
+  height: 32px;
+}
+
+.sidebar-first .region-sidebar-first #block-search-form {
+  border-bottom: none;
+  padding: 10px 0 5px 0;
+}
+
+div.facebook-block {
+  float: left;
+}
+
+div.fb-like {
+  float: left;
+  margin: 0 0 2px 10px;
+}
+
+div#fb-root {
+  display: none;
+}
+
+div.fb-like-box {
+  margin-top: 30px;
+}
+
+#block-block-3 {
+  margin-top: 10px;
+}

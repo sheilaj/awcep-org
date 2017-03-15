@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the AWCEP publication feature.
+ */
+
+include_once 'awcep_publication.features.inc';

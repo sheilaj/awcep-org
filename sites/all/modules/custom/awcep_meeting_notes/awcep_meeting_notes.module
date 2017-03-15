@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the AWCEP: meeting notes feature.
+ */
+
+include_once 'awcep_meeting_notes.features.inc';

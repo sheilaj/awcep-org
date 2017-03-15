@@ -1,0 +1,49 @@
+<?php
+/**
+ * @file
+ * Code for the AWCEP: site feature.
+ */
+
+include_once 'awcep_site.features.inc';
+
+/**
+ * Implements hook_block_info().
+ */
+function awcep_site_block_info() {
+  $blocks = array();
+
+  $blocks['awcep_footer'] = array(
+    'info' => t('AWCEP footer'),
+    'status' => 1,
+    'visibility' => 0,
+    'region' => 'footer',
+  );
+
+  return $blocks;
+}
+
+/**
+ * Implements hook_block_view().
+ */
+function awcep_site_block_view($delta) {
+  global $user;
+
+  if ($delta == 'awcep_footer') {
+    $items = array();
+    $items['copyright'] = t('&copy; !year AWCEP', array('!year' => date('Y')));
+    if ($user->uid) {
+      $items['username'] = t('Logged in as @name', array('@name' => $user->name));
+    }
+    else {
+      $items['login'] = l('login', 'user/login');
+    }
+    $list = theme('item_list', array(
+      'items' => $items,
+      'type' => 'ul',
+      'attributes' => array('id' => 'footer-items'),
+      'title' => '',
+    ));
+    return array('subject' => t('<none>'), 'content' => $list);
+  }
+}
+
